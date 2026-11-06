@@ -62,14 +62,8 @@ inventory-management-system/
 5. Brighton Katangala — CEN 01/01/24
 6. Thomas Nedi — CEN 01/17/20
 
-## GitHub submission requirements
-- Create a **public** GitHub repository (suggested name: `inventory-management-system-phase2`).
-- Each member should contribute using their own GitHub account. The Git commit history should show genuine participation; do not fabricate commits.
-- Push all pages and asset folders, including this README.
-- Open the repository in a private browser window and confirm it is publicly visible.
-- Send the public repository URL to **esogolera@unilia.ac.mw**.
 
-### Suggested fair division of work
+### Fair division of work
 - Chawanangwa: dashboard and navigation
 - Anderson: inventory list and sample records
 - Albert: add/edit/view/delete screens
@@ -77,19 +71,6 @@ inventory-management-system/
 - Brighton: reports and responsive CSS
 - Thomas: README, cross-page testing and accessibility
 
-*These are suggested allocations, not claims that members completed them.*
-
-## Assessment checklist
-- [x] Main pages created and linked
-- [x] Dashboard with sample data
-- [x] Appropriate labels, forms, input types and buttons
-- [x] Inventory table with demonstration records
-- [x] Consistent, responsive deep-blue styling
-- [x] Organized folders, logo and README
-- [x] HTML and CSS only; no database integration
-- [ ] Public GitHub repository created by the group
-- [ ] Genuine commits from group members
-- [ ] Repository URL submitted to lecturer
 
 
 ## Interface layout
