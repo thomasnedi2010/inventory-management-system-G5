@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Inventory Management System for stock, categories, suppliers and reporting." name="description"/>
+<title>Inventory Records | Inventory Management System</title>
+<link href="assets/img/logo.svg" rel="icon" type="image/svg+xml"/>
+<link href="assets/css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="app">
+<aside class="sidebar"><a class="sidebar-name" href="index.html"><img alt="" aria-hidden="true" class="brand-mini" src="assets/img/logo.svg"/>Inventory</a><nav aria-label="Main navigation" class="nav"><a class="" href="index.html"><span aria-hidden="true" class="symbol"><img alt="" aria-hidden="true" class="nav-icon" src="assets/icons/dashboard.svg"/></span><span>Dashboard</span></a><a aria-current="page" class="active" href="inventory.html"><span aria-hidden="true" class="symbol"><img alt="" aria-hidden="true" class="nav-icon" src="assets/icons/package.svg"/></span><span>Items</span></a><a class="" href="categories.html"><span aria-hidden="true" class="symbol"><img alt="" aria-hidden="true" class="nav-icon" src="assets/icons/grid.svg"/></span><span>Category</span></a><a class="" href="add-item.html"><span aria-hidden="true" class="symbol"><img alt="" aria-hidden="true" class="nav-icon" src="assets/icons/plus.svg"/></span><span>Add Item</span></a><a class="" href="item-details.html"><span aria-hidden="true" class="symbol"><img alt="" aria-hidden="true" class="nav-icon" src="assets/icons/clipboard.svg"/></span><span>Item Details</span></a><a class="" href="suppliers.html"><span aria-hidden="true" class="symbol"><img alt="" aria-hidden="true" class="nav-icon" src="assets/icons/users.svg"/></span><span>Suppliers</span></a><a class="" href="reports.html"><span aria-hidden="true" class="symbol"><img alt="" aria-hidden="true" class="nav-icon" src="assets/icons/chart.svg"/></span><span>Reports</span></a><a class="" href="about.html"><span aria-hidden="true" class="symbol"><img alt="" aria-hidden="true" class="nav-icon" src="assets/icons/info.svg"/></span><span>About</span></a><a class="" href="login.html"><span aria-hidden="true" class="symbol"><img alt="" aria-hidden="true" class="nav-icon" src="assets/icons/logout.svg"/></span><span>Logout</span></a></nav></aside>
+<div class="main">
+<header class="topbar"><div class="toolbar-left"><span aria-hidden="true" class="menu-glyph"><img alt="" aria-hidden="true" class="toolbar-icon" src="assets/icons/menu.svg"/></span><span class="toolbar-title">Inventory Management System</span></div><div class="top-right"><span class="user-indicator"><img alt="" aria-hidden="true" class="presence-icon" src="assets/icons/check.svg"/></span><span>Thomas Nedi</span><span class="avatar">TN</span></div></header><div class="page-crumb"><span>Inventory Records</span><span class="breadcrumb"><a href="index.html"><img alt="" aria-hidden="true" class="crumb-icon" src="assets/icons/home.svg"/> Home</a> / Inventory Records</span></div>
+<main class="content">
+<section class="heading">
+<div>
+<h1>
+        Inventory Records
+       </h1>
+<p class="subtitle">
+        Browse and manage all registered inventory items.
+       </p>
+</div>
+<a class="btn" href="add-item.html">
+       ＋ Add New Item
+      </a>
+</section>
+<section class="panel">
+<form action="inventory.html" class="toolbar" method="get" role="search">
+<div class="field">
+<label for="search">
+         Search product or SKU
+        </label>
+<input id="search" name="search" placeholder="e.g. Rice or RIC-001" type="search"/>
+</div>
+<div class="field">
+<label for="catfilter">
+         Category
+        </label>
+<select id="catfilter" name="category">
+<option value="">
+          All categories
+         </option>
+<option>
+          Groceries
+         </option>
+<option>
+          Household
+         </option>
+<option>
+          Stationery
+         </option>
+<option>
+          Electronics
+         </option>
+</select>
+</div>
+<div class="field">
+<label for="stockfilter">
+         Stock status
+        </label>
+<select id="stockfilter" name="status">
+<option value="">
+          All statuses
+         </option>
+<option>
+          In Stock
+         </option>
+<option>
+          Low Stock
+         </option>
+<option>
+          Out of Stock
+         </option>
+</select>
+</div>
+<button class="btn" type="submit">
+        Search
+       </button>
+</form>
+<div class="table-scroll">
+<table class="data-table">
+<thead>
+<tr>
+<th>
+           Product / SKU
+          </th>
+<th>
+           Category
+          </th>
+<th>
+           Unit price
+          </th>
+<th>
+           Quantity
+          </th>
+<th>
+           Value
+          </th>
+<th>
+           Status
+          </th>
+<th>
+           Actions
+          </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<span class="strong">
+            Rice 5kg
+           </span>
+<div class="sku">
+            RIC-001
+           </div>
+</td>
+<td>
+           Groceries
+          </td>
+<td>
+           MWK 7,500
+          </td>
+<td>
+           25
+          </td>
+<td>
+           MWK 187,500
+          </td>
+<td>
+<span class="pill ok">
+            In Stock
+           </span>
+</td>
+<td>
+<div class="action-links">
+<a aria-label="View Rice 5kg" class="icon-action action-eye" href="item-details.html" title="View Rice 5kg"><img alt="" aria-hidden="true" class="action-icon" src="assets/icons/eye.svg"/></a>
+<a aria-label="Edit Rice 5kg" class="action-edit icon-action" href="edit-item.html" title="Edit Rice 5kg"><img alt="" aria-hidden="true" class="action-icon" src="assets/icons/edit.svg"/></a>
+<a aria-label="Delete Rice 5kg" class="action-delete icon-action delete" href="delete-item.html" title="Delete Rice 5kg"><img alt="" aria-hidden="true" class="action-icon" src="assets/icons/delete.svg"/></a>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<span class="strong">
+            Cooking Oil 2L
+           </span>
+<div class="sku">
+            OIL-001
+           </div>
+</td>
+<td>
+           Groceries
+          </td>
+<td>
+           MWK 9,000
+          </td>
+<td>
+           3
+          </td>
+<td>
+           MWK 27,000
+          </td>
+<td>
+<span class="pill low">
+            Low Stock
+           </span>
+</td>
+<td>
+<div class="action-links">
+<a aria-label="View Cooking Oil 2L" class="icon-action action-eye" href="item-details.html" title="View Cooking Oil 2L"><img alt="" aria-hidden="true" class="action-icon" src="assets/icons/eye.svg"/></a>
+<a aria-label="Edit Cooking Oil 2L" class="action-edit icon-action" href="edit-item.html" title="Edit Cooking Oil 2L"><img alt="" aria-hidden="true" class="action-icon" src="assets/icons/edit.svg"/></a>
+<a aria-label="Delete Cooking Oil 2L" class="action-delete icon-action delete" href="delete-item.html" title="Delete Cooking Oil 2L"><img alt="" aria-hidden="true" class="action-icon" src="assets/icons/delete.svg"/></a>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<span class="strong">
+            Sugar 2kg
+           </span>
+<div class="sku">
+            SUG-002
+           </div>
+</td>
+<td>
+           Groceries
+          </td>
+<td>
+           MWK 4,500
+          </td>
+<td>
+           42
+          </td>
+<td>
+           MWK 189,000
+          </td>
+<td>
+<span class="pill ok">
+            In Stock
+           </span>
+</td>
+<td>
+<div class="action-links">
+<a aria-label="View Sugar 2kg" class="icon-action action-eye" href="item-details.html" title="View Sugar 2kg"><img alt="" aria-hidden="true" class="action-icon" src="assets/icons/eye.svg"/></a>
+<a aria-label="Edit Sugar 2kg" class="action-edit icon-action" href="edit-item.html" title="Edit Sugar 2kg"><img alt="" aria-hidden="true" class="action-icon" src="assets/icons/edit.svg"/></a>
+<a aria-label="Delete Sugar 2kg" class="action-delete icon-action delete" href="delete-item.html" title="Delete Sugar 2kg"><img alt="" aria-hidden="true" class="action-icon" src="assets/icons/delete.svg"/></a>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<span class="strong">
+            Detergent
+           </span>
+<div class="sku">
+            DET-001
+           </div>
+</td>
+<td>
+           Household
+          </td>
+<td>
+           MWK 6,000
+          </td>
+<td>
+           0
+          </td>
+<td>
+           MWK 0
+          </td>
+<td>
+<span class="pill out">
+            Out of Stock
+           </span>
+</td>
+<td>
+<div class="action-links">
+<a aria-label="View Detergent" class="icon-action action-eye" href="item-details.html" title="View Detergent"><img alt="" aria-hidden="true" class="action-icon" src="assets/icons/eye.svg"/></a>
+<a aria-label="Edit Detergent" class="action-edit icon-action" href="edit-item.html" title="Edit Detergent"><img alt="" aria-hidden="true" class="action-icon" src="assets/icons/edit.svg"/></a>
+<a aria-label="Delete Detergent" class="action-delete icon-action delete" href="delete-item.html" title="Delete Detergent"><img alt="" aria-hidden="true" class="action-icon" src="assets/icons/delete.svg"/></a>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<span class="strong">
+            Maize Flour 5kg
+           </span>
+<div class="sku">
+            MZ-001
+           </div>
+</td>
+<td>
+           Groceries
+          </td>
+<td>
+           MWK 8,000
+          </td>
+<td>
+           15
+          </td>
+<td>
+           MWK 120,000
+          </td>
+<td>
+<span class="pill ok">
+            In Stock
+           </span>
+</td>
+<td>
+<div class="action-links">
+<a aria-label="View Maize Flour 5kg" class="icon-action action-eye" href="item-details.html" title="View Maize Flour 5kg"><img alt="" aria-hidden="true" class="action-icon" src="assets/icons/eye.svg"/></a>
+<a aria-label="Edit Maize Flour 5kg" class="action-edit icon-action" href="edit-item.html" title="Edit Maize Flour 5kg"><img alt="" aria-hidden="true" class="action-icon" src="assets/icons/edit.svg"/></a>
+<a aria-label="Delete Maize Flour 5kg" class="action-delete icon-action delete" href="delete-item.html" title="Delete Maize Flour 5kg"><img alt="" aria-hidden="true" class="action-icon" src="assets/icons/delete.svg"/></a>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<span class="strong">
+            Notebook A4
+           </span>
+<div class="sku">
+            STA-001
+           </div>
+</td>
+<td>
+           Stationery
+          </td>
+<td>
+           MWK 2,500
+          </td>
+<td>
+           68
+          </td>
+<td>
+           MWK 170,000
+          </td>
+<td>
+<span class="pill ok">
+            In Stock
+           </span>
+</td>
+<td>
+<div class="action-links">
+<a aria-label="View Notebook A4" class="icon-action action-eye" href="item-details.html" title="View Notebook A4"><img alt="" aria-hidden="true" class="action-icon" src="assets/icons/eye.svg"/></a>
+<a aria-label="Edit Notebook A4" class="action-edit icon-action" href="edit-item.html" title="Edit Notebook A4"><img alt="" aria-hidden="true" class="action-icon" src="assets/icons/edit.svg"/></a>
+<a aria-label="Delete Notebook A4" class="action-delete icon-action delete" href="delete-item.html" title="Delete Notebook A4"><img alt="" aria-hidden="true" class="action-icon" src="assets/icons/delete.svg"/></a>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<span class="strong">
+            LED Bulb
+           </span>
+<div class="sku">
+            ELE-001
+           </div>
+</td>
+<td>
+           Electronics
+          </td>
+<td>
+           MWK 3,500
+          </td>
+<td>
+           5
+          </td>
+<td>
+           MWK 17,500
+          </td>
+<td>
+<span class="pill low">
+            Low Stock
+           </span>
+</td>
+<td>
+<div class="action-links">
+<a aria-label="View LED Bulb" class="icon-action action-eye" href="item-details.html" title="View LED Bulb"><img alt="" aria-hidden="true" class="action-icon" src="assets/icons/eye.svg"/></a>
+<a aria-label="Edit LED Bulb" class="action-edit icon-action" href="edit-item.html" title="Edit LED Bulb"><img alt="" aria-hidden="true" class="action-icon" src="assets/icons/edit.svg"/></a>
+<a aria-label="Delete LED Bulb" class="action-delete icon-action delete" href="delete-item.html" title="Delete LED Bulb"><img alt="" aria-hidden="true" class="action-icon" src="assets/icons/delete.svg"/></a>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</main>
+<footer class="footer">© 2026 Inventory Management System</footer>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Inventory Management System for stock, categories, suppliers and reporting." name="description"/>
+<title>Dashboard | Inventory Management System</title>
+<link href="assets/img/logo.svg" rel="icon" type="image/svg+xml"/>
+<link href="assets/css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="app">
+<aside class="sidebar"><a class="sidebar-name" href="index.html"><img alt="" aria-hidden="true" class="brand-mini" src="assets/img/logo.svg"/>Inventory</a><nav aria-label="Main navigation" class="nav"><a aria-current="page" class="active" href="index.html"><span aria-hidden="true" class="symbol"><img alt="" aria-hidden="true" class="nav-icon" src="assets/icons/dashboard.svg"/></span><span>Dashboard</span></a><a class="" href="inventory.html"><span aria-hidden="true" class="symbol"><img alt="" aria-hidden="true" class="nav-icon" src="assets/icons/package.svg"/></span><span>Items</span></a><a class="" href="categories.html"><span aria-hidden="true" class="symbol"><img alt="" aria-hidden="true" class="nav-icon" src="assets/icons/grid.svg"/></span><span>Category</span></a><a class="" href="add-item.html"><span aria-hidden="true" class="symbol"><img alt="" aria-hidden="true" class="nav-icon" src="assets/icons/plus.svg"/></span><span>Add Item</span></a><a class="" href="item-details.html"><span aria-hidden="true" class="symbol"><img alt="" aria-hidden="true" class="nav-icon" src="assets/icons/clipboard.svg"/></span><span>Item Details</span></a><a class="" href="suppliers.html"><span aria-hidden="true" class="symbol"><img alt="" aria-hidden="true" class="nav-icon" src="assets/icons/users.svg"/></span><span>Suppliers</span></a><a class="" href="reports.html"><span aria-hidden="true" class="symbol"><img alt="" aria-hidden="true" class="nav-icon" src="assets/icons/chart.svg"/></span><span>Reports</span></a><a class="" href="about.html"><span aria-hidden="true" class="symbol"><img alt="" aria-hidden="true" class="nav-icon" src="assets/icons/info.svg"/></span><span>About</span></a><a class="" href="login.html"><span aria-hidden="true" class="symbol"><img alt="" aria-hidden="true" class="nav-icon" src="assets/icons/logout.svg"/></span><span>Logout</span></a></nav></aside>
+<div class="main">
+<header class="topbar"><div class="toolbar-left"><span aria-hidden="true" class="menu-glyph"><img alt="" aria-hidden="true" class="toolbar-icon" src="assets/icons/menu.svg"/></span><span class="toolbar-title">Inventory Management System</span></div><div class="top-right"><span class="user-indicator"><img alt="" aria-hidden="true" class="presence-icon" src="assets/icons/check.svg"/></span><span>Thomas Nedi</span><span class="avatar">TN</span></div></header><div class="page-crumb"><span>Dashboard</span><span class="breadcrumb"><a href="index.html"><img alt="" aria-hidden="true" class="crumb-icon" src="assets/icons/home.svg"/> Home</a> / Dashboard</span></div>
+<main class="content">
+<section class="heading">
+<div>
+<h1>
+        Dashboard
+       </h1>
+</div>
+</section>
+<div class="stats"><a class="stat stat-cyan" href="inventory.html"><span class="stat-number">248</span><span class="stat-label">Total Items</span><span aria-hidden="true" class="stat-watermark"><img alt="" aria-hidden="true" class="stat-icon" src="assets/icons/package.svg"/></span><span class="stat-more">More info <img alt="" aria-hidden="true" class="more-icon" src="assets/icons/chevron.svg"/></span></a><a class="stat stat-green" href="categories.html"><span class="stat-number">18</span><span class="stat-label">Categories</span><span aria-hidden="true" class="stat-watermark"><img alt="" aria-hidden="true" class="stat-icon" src="assets/icons/grid.svg"/></span><span class="stat-more">More info <img alt="" aria-hidden="true" class="more-icon" src="assets/icons/chevron.svg"/></span></a><a class="stat stat-orange" href="inventory.html"><span class="stat-number">12</span><span class="stat-label">Low Stock</span><span aria-hidden="true" class="stat-watermark"><img alt="" aria-hidden="true" class="stat-icon" src="assets/icons/alert.svg"/></span><span class="stat-more">More info <img alt="" aria-hidden="true" class="more-icon" src="assets/icons/chevron.svg"/></span></a><a class="stat stat-red" href="inventory.html"><span class="stat-number">26</span><span class="stat-label">Out of Stock</span><span aria-hidden="true" class="stat-watermark"><img alt="" aria-hidden="true" class="stat-icon" src="assets/icons/ban.svg"/></span><span class="stat-more">More info <img alt="" aria-hidden="true" class="more-icon" src="assets/icons/chevron.svg"/></span></a><a class="stat stat-cyan" href="inventory.html"><span class="stat-number">210</span><span class="stat-label">In Stock</span><span aria-hidden="true" class="stat-watermark"><img alt="" aria-hidden="true" class="stat-icon" src="assets/icons/boxcheck.svg"/></span><span class="stat-more">More info <img alt="" aria-hidden="true" class="more-icon" src="assets/icons/chevron.svg"/></span></a><a class="stat stat-green" href="inventory.html"><span class="stat-number">5</span><span class="stat-label">Recent Items</span><span aria-hidden="true" class="stat-watermark"><img alt="" aria-hidden="true" class="stat-icon" src="assets/icons/history.svg"/></span><span class="stat-more">More info <img alt="" aria-hidden="true" class="more-icon" src="assets/icons/chevron.svg"/></span></a><a class="stat stat-orange" href="suppliers.html"><span class="stat-number">6</span><span class="stat-label">Suppliers</span><span aria-hidden="true" class="stat-watermark"><img alt="" aria-hidden="true" class="stat-icon" src="assets/icons/users.svg"/></span><span class="stat-more">More info <img alt="" aria-hidden="true" class="more-icon" src="assets/icons/chevron.svg"/></span></a><a class="stat stat-red" href="reports.html"><span class="stat-number">MWK 4.85M</span><span class="stat-label">Stock Value</span><span aria-hidden="true" class="stat-watermark"><img alt="" aria-hidden="true" class="stat-icon" src="assets/icons/wallet.svg"/></span><span class="stat-more">More info <img alt="" aria-hidden="true" class="more-icon" src="assets/icons/chevron.svg"/></span></a></div>
+<div class="two">
+<section class="panel">
+<div class="panel-head">
+<h2>
+         Stock Availability
+        </h2>
+<span class="badge-head">
+         Overview
+        </span>
+</div>
+<div class="stock-visual">
+<div aria-label="Stock availability: 210 in stock, 12 low stock, and 26 out of stock" class="donut" role="img">
+<div class="donut-inner">
+<strong>
+           248
+          </strong>
+<span>
+           Total items
+          </span>
+</div>
+</div>
+<div class="legend">
+<div>
+<i class="dot green">
+</i>
+          In Stock — 210
+         </div>
+<div>
+<i class="dot yellow">
+</i>
+          Low Stock — 12
+         </div>
+<div>
+<i class="dot red">
+</i>
+          Out of Stock — 26
+         </div>
+</div>
+</div>
+</section>
+<section class="panel">
+<div class="panel-head">
+<h2>
+         Recent Inventory Items
+        </h2>
+<a class="btn small secondary" href="inventory.html"><img alt="" class="btn-icon" src="assets/icons/eye.svg"/>
+         View all →
+        </a>
+</div>
+<div class="table-scroll">
+<table class="data-table">
+<thead>
+<tr>
+<th>
+            Product / SKU
+           </th>
+<th>
+            Category
+           </th>
+<th>
+            Unit price
+           </th>
+<th>
+            Quantity
+           </th>
+<th>
+            Value
+           </th>
+<th>
+            Status
+           </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<span class="strong">
+             Rice 5kg
+            </span>
+<div class="sku">
+             RIC-001
+            </div>
+</td>
+<td>
+            Groceries
+           </td>
+<td>
+            MWK 7,500
+           </td>
+<td>
+            25
+           </td>
+<td>
+            MWK 187,500
+           </td>
+<td>
+<span class="pill ok">
+             In Stock
+            </span>
+</td>
+</tr>
+<tr>
+<td>
+<span class="strong">
+             Cooking Oil 2L
+            </span>
+<div class="sku">
+             OIL-001
+            </div>
+</td>
+<td>
+            Groceries
+           </td>
+<td>
+            MWK 9,000
+           </td>
+<td>
+            3
+           </td>
+<td>
+            MWK 27,000
+           </td>
+<td>
+<span class="pill low">
+             Low Stock
+            </span>
+</td>
+</tr>
+<tr>
+<td>
+<span class="strong">
+             Sugar 2kg
+            </span>
+<div class="sku">
+             SUG-002
+            </div>
+</td>
+<td>
+            Groceries
+           </td>
+<td>
+            MWK 4,500
+           </td>
+<td>
+            42
+           </td>
+<td>
+            MWK 189,000
+           </td>
+<td>
+<span class="pill ok">
+             In Stock
+            </span>
+</td>
+</tr>
+<tr>
+<td>
+<span class="strong">
+             Detergent
+            </span>
+<div class="sku">
+             DET-001
+            </div>
+</td>
+<td>
+            Household
+           </td>
+<td>
+            MWK 6,000
+           </td>
+<td>
+            0
+           </td>
+<td>
+            MWK 0
+           </td>
+<td>
+<span class="pill out">
+             Out of Stock
+            </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</div>
+<section class="panel">
+<div class="panel-head">
+<h2>
+        Quick Actions
+       </h2>
+</div>
+<div class="three">
+<a class="btn" href="add-item.html">
+        ＋ Add Inventory Item
+       </a>
+<a class="btn secondary" href="categories.html">
+        ◇ Browse Categories
+       </a>
+<a class="btn secondary" href="reports.html">
+        ▥ View Reports
+       </a>
+</div>
+</section>
+</main>
+<footer class="footer">© 2026 Inventory Management System</footer>
+</div>
+</div>
+</body>
+</html>

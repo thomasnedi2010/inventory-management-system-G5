@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Inventory Management System for stock, categories, suppliers and reporting." name="description"/>
+<title>Edit Inventory Item | Inventory Management System</title>
+<link href="assets/img/logo.svg" rel="icon" type="image/svg+xml"/>
+<link href="assets/css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="app">
+<aside class="sidebar"><a class="sidebar-name" href="index.html"><img alt="" aria-hidden="true" class="brand-mini" src="assets/img/logo.svg"/>Inventory</a><nav aria-label="Main navigation" class="nav"><a class="" href="index.html"><span aria-hidden="true" class="symbol"><img alt="" aria-hidden="true" class="nav-icon" src="assets/icons/dashboard.svg"/></span><span>Dashboard</span></a><a class="" href="inventory.html"><span aria-hidden="true" class="symbol"><img alt="" aria-hidden="true" class="nav-icon" src="assets/icons/package.svg"/></span><span>Items</span></a><a class="" href="categories.html"><span aria-hidden="true" class="symbol"><img alt="" aria-hidden="true" class="nav-icon" src="assets/icons/grid.svg"/></span><span>Category</span></a><a class="" href="add-item.html"><span aria-hidden="true" class="symbol"><img alt="" aria-hidden="true" class="nav-icon" src="assets/icons/plus.svg"/></span><span>Add Item</span></a><a class="" href="item-details.html"><span aria-hidden="true" class="symbol"><img alt="" aria-hidden="true" class="nav-icon" src="assets/icons/clipboard.svg"/></span><span>Item Details</span></a><a class="" href="suppliers.html"><span aria-hidden="true" class="symbol"><img alt="" aria-hidden="true" class="nav-icon" src="assets/icons/users.svg"/></span><span>Suppliers</span></a><a class="" href="reports.html"><span aria-hidden="true" class="symbol"><img alt="" aria-hidden="true" class="nav-icon" src="assets/icons/chart.svg"/></span><span>Reports</span></a><a class="" href="about.html"><span aria-hidden="true" class="symbol"><img alt="" aria-hidden="true" class="nav-icon" src="assets/icons/info.svg"/></span><span>About</span></a><a class="" href="login.html"><span aria-hidden="true" class="symbol"><img alt="" aria-hidden="true" class="nav-icon" src="assets/icons/logout.svg"/></span><span>Logout</span></a></nav></aside>
+<div class="main">
+<header class="topbar"><div class="toolbar-left"><span aria-hidden="true" class="menu-glyph"><img alt="" aria-hidden="true" class="toolbar-icon" src="assets/icons/menu.svg"/></span><span class="toolbar-title">Inventory Management System</span></div><div class="top-right"><span class="user-indicator"><img alt="" aria-hidden="true" class="presence-icon" src="assets/icons/check.svg"/></span><span>Thomas Nedi</span><span class="avatar">TN</span></div></header><div class="page-crumb"><span>Edit Inventory Item</span><span class="breadcrumb"><a href="index.html"><img alt="" aria-hidden="true" class="crumb-icon" src="assets/icons/home.svg"/> Home</a> / Edit Inventory Item</span></div>
+<main class="content">
+<section class="heading">
+<div>
+<h1>
+        Edit Inventory Item
+       </h1>
+<p class="subtitle">
+        Update an existing inventory record using the example values below.
+       </p>
+</div>
+</section>
+<section class="panel">
+<div class="panel-head">
+<h2>
+        Edit Item Details
+       </h2>
+<span class="badge-head">
+        Required fields marked *
+       </span>
+</div>
+<form action="#" method="get">
+<div class="form-grid">
+<div class="field">
+<label for="itemname">
+          Item Name
+          <span class="required">
+           *
+          </span>
+</label>
+<input id="itemname" maxlength="120" name="item_name" placeholder="e.g. Rice 5kg" required="" type="text" value="Rice 5kg"/>
+</div>
+<div class="field">
+<label for="sku">
+          SKU Code
+          <span class="required">
+           *
+          </span>
+</label>
+<input id="sku" name="sku" placeholder="e.g. RIC-001" required="" type="text" value="RIC-001"/>
+</div>
+<div class="field">
+<label for="category">
+          Category
+          <span class="required">
+           *
+          </span>
+</label>
+<select id="category" name="category" required="">
+<option value="">
+           Select category
+          </option>
+<option selected="">
+           Groceries
+          </option>
+<option>
+           Household
+          </option>
+<option>
+           Stationery
+          </option>
+<option>
+           Electronics
+          </option>
+<option>
+           Beverages
+          </option>
+</select>
+</div>
+<div class="field">
+<label for="supplier">
+          Supplier
+         </label>
+<select id="supplier" name="supplier">
+<option value="">
+           Select supplier
+          </option>
+<option selected="">
+           Farmers Supply Co.
+          </option>
+<option>
+           Central Wholesalers
+          </option>
+<option>
+           Town Supplies
+          </option>
+<option>
+           Office Point
+          </option>
+<option>
+           TechPoint Ltd
+          </option>
+</select>
+</div>
+<div class="field">
+<label for="qty">
+          Quantity
+          <span class="required">
+           *
+          </span>
+</label>
+<input id="qty" min="0" name="quantity" placeholder="0" required="" step="1" type="number" value="25"/>
+</div>
+<div class="field">
+<label for="price">
+          Unit Price (MWK)
+          <span class="required">
+           *
+          </span>
+</label>
+<input id="price" min="0" name="unit_price" placeholder="0.00" required="" step="0.01" type="number" value="7500"/>
+</div>
+<div class="field">
+<label for="reorder">
+          Low Stock Threshold
+         </label>
+<input id="reorder" min="0" name="low_stock_threshold" step="1" type="number" value="5"/>
+</div>
+<div class="field">
+<label for="date">
+          Date Recorded
+         </label>
+<input id="date" name="date_recorded" type="date" value="2026-11-06"/>
+</div>
+<div class="field wide">
+<label for="notes">
+          Notes / Description
+         </label>
+<textarea id="notes" name="notes" placeholder="Additional information about this item...">5kg bag of rice for retail sales.</textarea>
+</div>
+</div>
+<div class="form-actions">
+<a class="btn secondary" href="inventory.html">
+         Cancel
+        </a>
+<button class="btn" type="submit">
+         Update Item
+        </button>
+</div>
+</form>
+</section>
+</main>
+<footer class="footer">© 2026 Inventory Management System</footer>
+</div>
+</div>
+</body>
+</html>
